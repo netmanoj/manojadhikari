@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    <link rel="stylesheet" href="style.css">
+   
+  </head>
+  <body>
+    <div class="header">
+      <img src="profile.png" alt="Profile Picture">
+      <h1>Manoj Adhikari</h1>
+      <p>Welcome to manojadhikari.life 😊</p>
+    </div>
+    <div class="section">
+      <h2>About Me 👨‍💼</h2>
+      <p>I am a computer science student with a passion for design and web development.I am constantly dedicated looking for new opportunities to grow and understand the world and the meaning of existence🤔.</p>
+    </div>
+    <div class="section">
+      <h2>Skills 🛠️👨‍🎓</h2>
+      <p>Graphic Desin</p>
+      <p>Web Development</p>
+      <p>Shopify Handiling</p>
+      <p>Social Media Ads Optimization</p>
+    </div>
+
+    <div class="section">
+      <h2>Play Snake Game 🐍 </h2>
+      <p1>Controls:</p1><br>
+      <p1>-->Use the up arrow key to move the snake upwards</p1><br>
+      <p1>-->Use the down arrow key to move the snake downwards</p1><br>
+      <p1>-->Use the left arrow key to move the snake to the left</p1><br>
+      <p1>-->Use the right arrow key to move the snake to the right</p1>
+    </div>
+    <button id="play-button">Start</button><br><br>
+
+    <canvas id="gameCanvas"></canvas>
+    
+  
+
+    <div class="container">
+      <h3>Contact Me ☏📱</h3>
+      <form id="contact-form" action="POST" data-netlify="true">
+        <input class="input-field" type="text" id="fname" name="firstname" placeholder="your name..">
+        <input class="input-field" type="text" id="lname" name="lastname" placeholder="your last name..">
+        <input class="input-field" type="text" id="place" name="place" placeholder="where you form...">
+        <textarea class="inout-field" id="subject" name="subject" placeholder="write something.." style="height:200px"></textarea><br>
+        <div data-netlify-recaptcha="true" style="text-align: center;"></div>
+        <input id="submit" type="submit" value="Submit">   
+      </form>
+    </div> 
+<br><br>
+<div class="blog-link">
+  <a href="https://www.blogongo.com">Visit My Blog</a>
+</div>
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1997366415319669"
+     crossorigin="anonymous"></script>
+<br> <br>
+<section class="app">
+  <div class="visual"></div>
+  <h2>Play Music</h2>
+  <p1>-->Click the color boxes below to play music</p1>
+  <div class="pads">
+    <div class="pad1">
+      <audio src="./sounds/bubbles.mp3" class="sound"></audio>
+    </div>
+    <div class="pad2">
+      <audio class="sound">
+        <source src="./sounds/clay.mp3" />
+      </audio>
+    </div>
+    <div class="pad3">
+      <audio class="sound">
+        <source src="./sounds/confetti.mp3" />
+      </audio>
+    </div>
+    <div class="pad4">
+      <audio class="sound">
+        <source src="./sounds/glimmer.mp3" />
+      </audio>
+    </div>
+    <div class="pad5">
+      <audio class="sound">
+        <source src="./sounds/moon.mp3" />
+      </audio>
+    </div>
+    <div class="pad6">
+      <audio class="sound">
+        <source src="./sounds/ufo.mp3" />
+      </audio>
+    </div>
+  </div>
+</section>
+<section class="padd">
+  <div class="padd">
+    <div class="pad6">
+      <audio class="sound">
+        <source src="./sounds/ufo.mp3" />
+      </audio>
+    </div>
+  </div>
+</section>
+
+    <div class="footer">
+      <h>Manoj Adhikari</h>
+      <p>© Random Human From Planet Earth</p>
+      <h>Made By a Human</h>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

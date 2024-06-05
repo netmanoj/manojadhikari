@@ -1,0 +1,259 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(19, 24, 49);
+  margin: 0;
+  text-align: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header {
+  text-align: center;
+  align-items: center;
+  background-image: linear-gradient(
+    0deg,
+    rgb(23, 23, 23) 23.8%,
+    rgb(6, 53, 92) 92%
+  );
+  color: #fff;
+  padding: 30px;
+  width: 100%;
+}
+.header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.header p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.header img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.section {
+    padding: 30px;
+  }
+.section h2 {
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+.section p {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.footer {
+    text-align: center;
+    background-image: linear-gradient(
+      0deg,
+      #023047 23.8%,
+      rgb(0, 80, 159) 92%
+    );
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    width: 100%;
+  }
+.footer h{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+.footer p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+    flex: 1;
+    min-height: 5vh;
+    
+}
+
+p1{
+    font-size: 13px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+/* Snake Game*/
+#gameCanvas {
+    border: 5px solid rgb(255, 255, 255);
+    margin-bottom: 50px;
+    
+}
+
+
+#play-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 50%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid rgb(0, 0, 0); /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: rgb(30, 24, 24);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color:  rgb(19, 24, 49);
+  padding: 20px;
+}
+.container h3{
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 25px;
+}
+
+/* Play Music */
+.app {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.pads {
+  background: lightblue;
+  width: 100%;
+  display: flex;
+}
+.pads > div {
+  height: 200px;
+  width: 150px;
+  flex: 1;
+}
+.pad1 {
+   background-image: linear-gradient(
+      0deg,
+      rgb(0, 80, 159) 1%,
+      #60d394  95%
+    );
+}
+.pad2 {
+  background-image: linear-gradient(
+    0deg,
+    rgb(0, 80, 159) 1%,
+    #d36060  95%
+  );
+}
+.pad3 {
+  background-image: linear-gradient(
+    0deg,
+    rgb(0, 80, 159) 1%,
+    #c060d3  95%
+  );
+}
+.pad4 {
+  background-image: linear-gradient(
+    0deg,
+    rgb(0, 80, 159) 1%,
+    #d3d160  95%
+  );
+}
+.pad5 {
+  background-image: linear-gradient(
+    0deg,
+    rgb(0, 80, 159) 1%,
+    #606bd3  95%
+  );
+}
+.pad6 {
+  background-image: linear-gradient(
+    0deg,
+    rgb(0, 80, 159) 1%,
+    #60c2d3  95%
+  );
+
+}
+/* padd sec*/
+.padd {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.padd > div {
+  height: 200px;
+  width: 150px;
+  flex: 1;
+}
+.padd{
+  background: black;
+  height: 89px;
+  position: fixed;
+  width: 100px;
+
+}
+
+.visual > div {
+  position: absolute;
+  bottom: 0%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+}
+
+.app h2{
+    font-size: 36px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+
+/*Blog Link*/
+.blog-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+}
+
+.blog-link a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
