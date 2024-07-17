@@ -1,64 +1,114 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Site</title>
-    <link rel="stylesheet" href="style.css">
-   
-  </head>
-  <body>
-    <div class="header">
-      <img src="profile.png" alt="Profile Picture">
-      <h1>Manoj Adhikari</h1>
-      <p>Welcome to manojadhikari.life 😊</p>
-    </div>
-    <div class="section">
-      <h2>About Me 👨‍💼</h2>
-      <p>I am a computer science graduate with a passion for design and web development.I am constantly dedicated looking for new opportunities to grow and understand the world and the meaning of existence🤔.</p>
-    </div>
-    <div class="section">
-      <h2>Skills 🛠️👨‍🎓</h2>
-      <p>🎨 Graphic Desin</p>
-      <p>🌐 Web Development - MERN Stack</p>
-      <p>📱 Social Media Handling</p>
-    </div>
+    <title>Manoj's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
 
-    <div class="section">
-      <h2>Play Snake Game 🐍 </h2>
-      <p1>Controls:</p1><br>
-      <p1>--> Use the up arrow key to move the snake upwards</p1><br>
-      <p1>--> Use the down arrow key to move the snake downwards</p1><br>
-      <p1>--> Use the left arrow key to move the snake to the left</p1><br>
-      <p1>--> Use the right arrow key to move the snake to the right</p1>
-    </div>
-    <button id="play-button">Start</button><br><br>
+<body class="bg-gray-900 text-white">
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col items-center justify-center">
+        <div class="typewriter text-4xl md:text-6xl text-center mb-8">
+            <h1 class="break-words">Hi, I'm Manoj, a Web Developer</h1>
+        </div>
+        <img src="/profile.png" alt="Profile picture of Manoj" class="rounded-full w-36 h-36">
+    </section>
 
-    <canvas id="gameCanvas"></canvas>
-    
-  
+    <!-- Skills Section -->
+    <section class="py-20 bg-blue-1500">
+        <div class="container mx-auto">
+            <h2 class="text-3xl text-center mb-10">Skills</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="glossy-card p-6 rounded-lg text-center w-40">
+                    <img src="/logos/html.png" alt="HTML icon" class="mx-auto mb-4">
+                    <h3 class="text-xl">HTML</h3>
+                </div>
+                <div class="glossy-card p-6 rounded-lg text-center w-40">
+                    <img src="/logos/css.png" alt="CSS icon" class="mx-auto mb-4">
+                    <h3 class="text-xl">CSS</h3>
+                </div>
+                <div class="glossy-card p-6 rounded-lg text-center w-40">
+                    <img src="logos/js.png" alt="JavaScript icon" class="mx-auto mb-4">
+                    <h3 class="text-xl">JavaScript</h3>
+                </div>
+                <div class="glossy-card p-6 rounded-lg text-center w-40">
+                    <img src="/logos/node.png" alt="Node.js icon" class="mx-auto mb-4">
+                    <h3 class="text-xl">Node.js</h3>
+                </div>
+                <div class="glossy-card p-6 rounded-lg text-center w-40">
+                    <img src="/logos/react.webp" alt="React.js icon" class="mx-auto mb-4">
+                    <h3 class="text-xl">React.js</h3>
+                </div>
+                <div class="glossy-card p-6 rounded-lg text-center w-40">
+                    <img src="/logos/c.png" alt="C icon" class="mx-auto mb-4">
+                    <h3 class="text-xl">C</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="container">
-      <h3>Contact Me ☏📱</h3>
-      <form id="contact-form" action="POST" data-netlify="true">
-        <input class="input-field" type="text" id="fname" name="firstname" placeholder="your name..">
-        <input class="input-field" type="text" id="lname" name="lastname" placeholder="your last name..">
-        <input class="input-field" type="text" id="place" name="place" placeholder="where you form...">
-        <textarea class="inout-field" id="subject" name="subject" placeholder="write something.." style="height:200px"></textarea><br>
-        <div data-netlify-recaptcha="true" style="text-align: center;"></div>
-        <input id="submit" type="submit" value="Submit">   
+    <!-- Projects Section -->
+    <section class="py-20 bg-blue-1500">
+        <div class="container mx-auto">
+            <h2 class="text-3xl text-center mb-10">Projects</h2>
+            <div class="flex flex-wrap justify-center gap-10">
+                <div class="glossy-card p-6 rounded-lg w-full md:w-1/4">
+                    <img src="/project-img/chat.png" alt="Screenshot of project 1" class="rounded mb-4">
+                    <h3 class="text-xl mb-2">Group Chat App</h3>
+                    <p>Group Chat Application using React, Node, Redux, Firebase. <a href="https://real-time-chat-app-5952a.firebaseapp.com/" class="break-words text-xl" style="color: yellowgreen;">  Read More..</a></p>
+                </div>
+                <div class="glossy-card p-6 rounded-lg w-full md:w-1/4">
+                    <img src="/project-img/door.png" alt="Screenshot of project 2" class="rounded mb-4">
+                    <h3 class="text-xl mb-2">Door Unlock Using facial recognigation. </h3>
+                    <p>Built using Python Facical recognigation library. <a href="https://www.linkedin.com/in/livingmanoj/details/projects/"class="break-words text-xl" style="color: yellowgreen;">  Read More..</a></p>
+                </div>
+                <div class="glossy-card p-6 rounded-lg w-full md:w-1/4">
+                    <img src="/project-img/fos.png" alt="Screenshot of project 3" class="rounded mb-4">
+                    <h3 class="text-xl mb-2">Food Delevery System</h3>
+                    <p>Complete food odering system build using PHP. <a href="https://www.linkedin.com/in/livingmanoj/details/projects/" class="break-words text-xl" style="color: yellowgreen;">  Read More..</a></p>
+                </div>
+                <div class="glossy-card p-6 rounded-lg w-full md:w-1/4">
+                    <img src="/project-img/name.png" alt="Screenshot of project 4" class="rounded mb-4">
+                    <h3 class="text-xl mb-2">Name Collector</h3>
+                    <p>A name list collector for blood donation camp build using PHP. <a href="https://www.linkedin.com/in/livingmanoj/details/projects/" class="break-words text-xl" style="color: yellowgreen;">  Read More..</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="flex items-center justify-center h-screen">
+    <div class="container-form bg-white p-8 rounded-lg shadow-lg w-full max-w-md" style=" background-color: rgb(19, 24, 49);">
+      <h3 class="text-2xl font-bold mb-4 text-center" style="color: rgb(255, 255, 255);">Contact Me ☏📱</h3>
+      <form id="contact-form" action="POST" data-netlify="true" class="space-y-4">
+        <input class="input-field w-full p-2 border border-gray-300 rounded-md" type="text" id="fname" name="firstname" placeholder="Your name...">
+        <input class="input-field w-full p-2 border border-gray-300 rounded-md" type="text" id="lname" name="lastname" placeholder="Your last name...">
+        <input class="input-field w-full p-2 border border-gray-300 rounded-md" type="text" id="place" name="place" placeholder="Where you from...">
+        <textarea class="input-field w-full p-2 border border-gray-300 rounded-md" id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+        <div data-netlify-recaptcha="true" class="text-center"></div>
+        <input id="submit" type="submit" value="Submit" class="w-full p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 cursor-pointer">
       </form>
-    </div> 
-<br><br>
+    </div>
+  </div>
 
-<br>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1997366415319669"
+    <!-- Footer Section -->
+    <footer class="py-10 bg-gray-800 text-center">
+        <p>&copy; 2023 Manoj. All rights reserved.</p>
+        
+    <br>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1997366415319669"
      crossorigin="anonymous"></script>
 <br> <br>
 <section class="app">
   <div class="visual"></div>
   <h2>Play Music</h2>
   <p1>-->Touch the color boxes below to play music</p1>
+  <br>
   <div class="pads">
     <div class="pad1">
       <audio src="./sounds/bubbles.mp3" class="sound"></audio>
@@ -99,12 +149,8 @@
     </div>
   </div>
 </section>
+    </footer>
 
-    <div class="footer">
-      <h>Manoj Adhikari</h>
-      <p>© Random Human From Planet Earth</p>
-      <h>Made By a Human</h>
-    </div>
-  </body>
-  <script src="script.js"></script>
+</body>
+<script src="script.js"></script>
 </html>
