@@ -3,37 +3,43 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: rgb(19, 24, 49);
 }
+.typewriter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-.typewriter h1 {
-    overflow: hidden;
-    border-right: .15em solid orange;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+.typewriter-text {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+}
+
+#line1 {
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+#line2 {
+  opacity: 0;
+  border: none;
 }
 
 @keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
+  from { width: 0; }
+  to { width: 100%; }
 }
 
 @keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: orange;
-    }
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 .glossy-card {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
