@@ -13,6 +13,8 @@ body {
   overflow: hidden;
   border-right: .15em solid orange;
   white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
   margin: 0 auto;
   letter-spacing: .15em;
 }
@@ -24,6 +26,12 @@ body {
 #line2 {
   opacity: 0;
   border: none;
+}
+
+@media (max-width: 600px) {
+  .typewriter-text {
+    font-size: 25px; /* Example: Adjust font size for smaller screens */
+  }
 }
 
 @keyframes typing {
