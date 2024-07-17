@@ -85,11 +85,11 @@
   <div class="flex items-center justify-center h-screen">
     <div class="container-form bg-white p-8 rounded-lg shadow-lg w-full max-w-md" style=" background-color: rgb(19, 24, 49);">
       <h3 class="text-2xl font-bold mb-4 text-center" style="color: rgb(255, 255, 255);">Contact Me ☏📱</h3>
-      <form id="contact-form" action="POST" data-netlify="true" class="space-y-4">
-        <input class="input-field w-full p-2 border border-gray-300 rounded-md" type="text" id="fname" name="firstname" placeholder="Your name...">
-        <input class="input-field w-full p-2 border border-gray-300 rounded-md" type="text" id="lname" name="lastname" placeholder="Your last name...">
-        <input class="input-field w-full p-2 border border-gray-300 rounded-md" type="text" id="place" name="place" placeholder="Where you from...">
-        <textarea class="input-field w-full p-2 border border-gray-300 rounded-md" id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+      <form id="contact-form" action="POST" data-netlify="true" class="space-y-4" netlify>
+        <input class="input-field w-full p-2 border border-gray-300 rounded-md text-black" type="text" id="fname" name="firstname" placeholder="Your name...">
+        <input class="input-field w-full p-2 border border-gray-300 rounded-md text-black" type="text" id="lname" name="lastname" placeholder="Your last name...">
+        <input class="input-field w-full p-2 border border-gray-300 rounded-md text-black" type="text" id="place" name="place" placeholder="Where you from...">
+        <textarea class="input-field w-full p-2 border border-gray-300 rounded-md text-black" id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
         <div data-netlify-recaptcha="true" class="text-center"></div>
         <input id="submit" type="submit" value="Submit" class="w-full p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 cursor-pointer">
       </form>
