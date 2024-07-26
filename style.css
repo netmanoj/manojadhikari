@@ -93,42 +93,42 @@ body {
   .pad1 {
      background-image: linear-gradient(
         0deg,
-        rgb(0, 80, 159) 1%,
+        rgb(17,24,39) 1%,
         #60d394  95%
       );
   }
   .pad2 {
     background-image: linear-gradient(
       0deg,
-      rgb(0, 80, 159) 1%,
+      rgb(17,24,39) 1%,
       #d36060  95%
     );
   }
   .pad3 {
     background-image: linear-gradient(
       0deg,
-      rgb(0, 80, 159) 1%,
+      rgb(17,24,39) 1%,
       #c060d3  95%
     );
   }
   .pad4 {
     background-image: linear-gradient(
       0deg,
-      rgb(0, 80, 159) 1%,
+      rgb(17,24,39) 1%,
       #d3d160  95%
     );
   }
   .pad5 {
     background-image: linear-gradient(
       0deg,
-      rgb(0, 80, 159) 1%,
+      rgb(17,24,39) 1%,
       #606bd3  95%
     );
   }
   .pad6 {
     background-image: linear-gradient(
       0deg,
-      rgb(0, 80, 159) 1%,
+      rgb(17,24,39) 1%,
       #60c2d3  95%
     );
   
