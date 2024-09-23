@@ -73,5 +73,4 @@
 <p align="center">
   - Building advanced full-stack applications with modern JavaScript technologies.
   - Enhancing UI/UX with interactive and 3D components.
-  - Exploring new tech and improving my coding skills.
 </p>
